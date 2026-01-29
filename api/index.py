@@ -8,7 +8,7 @@ CORS(app)
 
 # کلیلەکە لە ڤێرسێلەوە دەخوێنێتەوە
 genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel(model_name='gemini-1.5-flash')
 
 @app.route("/api/chat", methods=["POST"])
 def chat():
