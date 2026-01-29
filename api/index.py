@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai
+from google.generativeai.types import GenerationConfig
 import os
 
 app = Flask(__name__)
